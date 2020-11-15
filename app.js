@@ -1,11 +1,16 @@
 const express = require('express');
 
 const app = express();
+const PORT = 3000;
 
 app.get('/', (req, res)=>{
-    res.send({message:"hello from a container"})
+    res.send({message:"hello from a container"});
 })
 
-app.listen(3000, ()=>{
-    console.log('app running on port 30000');
+app.get('/port', (req,res)=>{
+    res.send({port: PORT});
+})
+
+app.listen(PORT, ()=>{
+    console.log(`app running on port ${PORT}`);
 })
