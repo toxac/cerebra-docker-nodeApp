@@ -1,0 +1,23 @@
+{
+  "name": "docker-nodeapp",
+  "version": "1.0.0",
+  "description": "sample app for docker image",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toxac/cerebra-docker-nodeApp.git"
+  },
+  "author": "t0xac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toxac/cerebra-docker-nodeApp/issues"
+  },
+  "homepage": "https://github.com/toxac/cerebra-docker-nodeApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
